@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Login · Aura Book Hotel Services</title>
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/bootstrap.min.css"><link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/responsive.css"><link rel="stylesheet" href="css/booking.css">
+<style>
+.login-switch{display:flex;gap:10px;margin-bottom:22px;flex-wrap:wrap}.login-switch button{flex:1;min-width:145px;padding:12px 16px;border:1px solid #d8d8d8;border-radius:5px;background:#f5f5f5;color:#333;font-weight:600}.login-switch button.active{background:#0b3d3b;border-color:#0b3d3b;color:#fff}.login-panel[hidden]{display:none!important}.login-subtitle{margin-bottom:18px;color:#666}.login-icon{margin-right:8px}.login-footer{margin-top:16px;color:#777;font-size:13px}
+
+/* Login page layout fixes */
+#login_app{max-width:560px;margin:0 auto;color:#2e2d2d;font-size:15px}
+#login_app .admin-login{width:100%;max-width:560px;margin:0 auto;background:#fff;border:1px solid #ddd;padding:28px 30px;box-shadow:0 4px 18px rgba(0,0,0,.07);box-sizing:border-box}
+#login_app h2{font-size:25px;line-height:1.3;font-weight:600;color:#2e2d2d;margin:0 0 8px}
+#login_app h3{font-size:19px;line-height:1.35;margin:0 0 14px;color:#2e2d2d}
+#login_app label{display:block;margin:12px 0 5px;font-size:13px;color:#666}
+#login_app input{display:block;width:100%;height:46px;padding:10px 12px;border:1px solid #d8d8d8;background:#fff;color:#2e2d2d;font:14px 'Poppins',sans-serif;box-sizing:border-box}
+#login_app .login-switch{display:flex;gap:10px;margin:20px 0 24px}
+#login_app .login-switch button{flex:1;min-width:0;min-height:48px;padding:12px 10px;border:1px solid #d8d8d8;background:#f5f5f5;color:#2e2d2d;font:600 14px 'Poppins',sans-serif}
+#login_app .login-switch button.active{background:#0b3d3b;border-color:#0b3d3b;color:#fff}
+#login_app .login-panel[hidden]{display:none!important}
+#login_app .login-panel .row{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:16px!important}
+#login_app .login-panel .row button,#login_app .login-panel .row .btn{min-height:44px;padding:10px 18px;font:500 14px 'Poppins',sans-serif;text-decoration:none}
+#login_app .login-panel .row button{background:#2e2d2d;border:1px solid #2e2d2d;color:#fff}
+#login_app .login-panel .row button:hover{background:#b8893a;border-color:#b8893a}
+#login_app .login-panel .row .btn.ghost{background:#fff;border:1px solid #b8893a;color:#2e2d2d}
+#login_app .login-subtitle{line-height:1.6;margin:0 0 12px;color:#737272}
+#login_app .login-footer{margin:18px 0 0;color:#737272;font-size:13px;line-height:1.5}
+#login_app .err{min-height:0;margin:8px 0 0;color:#b42318;font-size:13px}
+.booking{padding:48px 20px 70px}
+@media(max-width:767px){#login_app .admin-login{padding:22px 18px}#login_app .login-switch{gap:8px}#login_app .login-switch button{font-size:13px;padding:10px 6px}.booking{padding:30px 14px 48px}.page_head h2{padding:30px 0}}
+</style>
+</head>
+<body class="main-layout">
+<header>
+ <div class="header">
+  <div class="container-fluid">
+   <div class="row">
+    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+     <div class="full"><div class="center-desk"><div class="logo"><a href="index.html"><img src="images/logo.svg" width="190" height="40" alt="Aura Book Hotel Services"></a></div></div></div>
+    </div>
+    <div class="col-xl-6 col-lg-6 col-md-7 col-sm-9">
+     <nav class="navigation navbar navbar-expand-md navbar-dark">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navbarsExample04">
+       <ul class="navbar-nav mr-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="rooms.html">Rooms &amp; Rates</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+       </ul>
+      </div>
+     </nav>
+    </div>
+    <div class="col-xl-3 col-lg-3 col-md-2 nav_actions"><a class="nav_login active" href="login.html" aria-current="page">Login</a><a class="get_btn nav_book" href="book.html">Book Now</a></div>
+   </div>
+  </div>
+ </div>
+</header>
+<div class="page_head"><div class="container"><h2>Login</h2></div></div>
+<section class="booking"><div class="container"><main id="login_app"><div class="card admin-login">
+<h2>Welcome to Aura</h2><p class="login-subtitle">Choose the type of account you want to sign in to.</p>
+<div class="login-switch" role="tablist" aria-label="Choose login type"><button id="guestTab" class="active" type="button" role="tab" aria-selected="true" onclick="showLogin('guest')"><i class="fa fa-user login-icon" aria-hidden="true"></i>Guest Login</button><button id="adminTab" type="button" role="tab" aria-selected="false" onclick="showLogin('admin')"><i class="fa fa-lock login-icon" aria-hidden="true"></i>Admin Login</button></div>
+<section id="guestPanel" class="login-panel" role="tabpanel" aria-labelledby="guestTab"><h3>Guest Login</h3><label for="email">Email</label><input id="email" type="email" autocomplete="username" placeholder="Enter your email"><label for="password">Password</label><input id="password" type="password" autocomplete="current-password" placeholder="Enter your password"><p id="guestMessage" class="err" aria-live="polite"></p><div class="row" style="margin-top:12px"><button type="button" onclick="loginGuest()">Log in as Guest</button></div><p class="login-footer"><a href="#" onclick="showGuestForm('register');return false;">Create an account</a> &nbsp;·&nbsp; <a href="#" onclick="showGuestForm('reset');return false;">Forgot password?</a></p>
+<div id="guestExtra" hidden style="margin-top:20px;border-top:1px solid #ddd;padding-top:18px"></div></section>
+<section id="adminPanel" class="login-panel" role="tabpanel" aria-labelledby="adminTab" hidden><h3>Administrator Login</h3><p class="login-subtitle">This sign-in is reserved for authorized hotel administrators.</p><label for="adminEmail">Admin email</label><input id="adminEmail" type="email" autocomplete="username" placeholder="Enter administrator email"><label for="adminPassword">Password</label><input id="adminPassword" type="password" autocomplete="current-password" placeholder="Enter administrator password"><p id="adminMessage" class="err" aria-live="polite"></p><div class="row" style="margin-top:12px"><button type="button" onclick="loginAdmin()">Sign in as Admin</button><a class="btn ghost" href="index.html">Back to website</a></div><p class="login-footer">Guest accounts cannot access the admin dashboard.</p></section>
+</div></main></div></section><div id="toast"></div>
+<script src="js/data.js"></script><script src="js/app.js"></script>
+<script>
+function showLogin(type){const guest=type==='guest';document.getElementById('guestPanel').hidden=!guest;document.getElementById('adminPanel').hidden=guest;document.getElementById('guestTab').classList.toggle('active',guest);document.getElementById('adminTab').classList.toggle('active',!guest);document.getElementById('guestTab').setAttribute('aria-selected',String(guest));document.getElementById('adminTab').setAttribute('aria-selected',String(!guest));}
+function showGuestForm(type){const box=document.getElementById('guestExtra');box.hidden=false;document.getElementById('guestMessage').textContent='';if(type==='register'){box.innerHTML=`<h3>Create guest account</h3><label for="newName">Full name</label><input id="newName" autocomplete="name" placeholder="Your full name"><label for="newEmail">Email</label><input id="newEmail" type="email" autocomplete="email" placeholder="you@example.com"><label for="newPhone">Phone number</label><input id="newPhone" type="tel" autocomplete="tel" placeholder="Your phone number"><label for="newPassword">Password (at least 6 characters)</label><input id="newPassword" type="password" autocomplete="new-password" placeholder="Create a password"><div class="row"><button type="button" onclick="createGuest()">Create account</button><button type="button" class="btn ghost" onclick="hideGuestForm()">Cancel</button></div><p id="extraMessage" class="err" aria-live="polite"></p><p class="login-footer">Email/phone verification codes require a server and an email/SMS provider. This static demo cannot send real codes.</p>`}else{box.innerHTML=`<h3>Reset password</h3><p class="login-subtitle">Enter your registered email. This demo will explain the next step but cannot send a real reset link.</p><label for="resetEmail">Email</label><input id="resetEmail" type="email" autocomplete="email" placeholder="Enter your registered email"><div class="row"><button type="button" onclick="requestReset()">Request reset</button><button type="button" class="btn ghost" onclick="hideGuestForm()">Cancel</button></div><p id="extraMessage" class="err" aria-live="polite"></p>`}box.scrollIntoView({behavior:'smooth',block:'nearest'})}
+function hideGuestForm(){const box=document.getElementById('guestExtra');box.hidden=true;box.innerHTML=''}
+function createGuest(){const name=document.getElementById('newName').value.trim(),email=document.getElementById('newEmail').value.trim().toLowerCase(),phone=document.getElementById('newPhone').value.trim(),pw=document.getElementById('newPassword').value,msg=document.getElementById('extraMessage');if(!name||!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)||phone.length<7||pw.length<6){msg.textContent='Enter your name, valid email, phone number, and password of at least 6 characters.';return}if(findUser(email)){msg.textContent='An account already exists for this email. Please log in.';return}addUser({name,email,phone,pw:hash(pw),verified:false});msg.textContent='Account created. To sign in, verify your email/phone through the booking verification flow. Real verification delivery is not enabled in this static demo.'}
+function requestReset(){const email=document.getElementById('resetEmail').value.trim().toLowerCase(),msg=document.getElementById('extraMessage');if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){msg.textContent='Please enter a valid email address.';return}msg.textContent='If an account exists for this email, a reset link would be sent. Real password-reset email delivery is not configured in this static demo.'}
+function loginGuest(){const email=document.getElementById('email').value.trim().toLowerCase(),pw=document.getElementById('password').value;const user=findUser(email);const msg=document.getElementById('guestMessage');if(!user||user.pw!==hash(pw)){msg.textContent='Email or password is incorrect.';return}if(!user.verified){msg.textContent='Please complete account verification during booking first.';return}setSession(user.email);msg.textContent='Login successful. Redirecting to booking…';setTimeout(()=>location.href='book.html',500)}
+function loginAdmin(){const email=document.getElementById('adminEmail').value.trim().toLowerCase(),pw=document.getElementById('adminPassword').value,msg=document.getElementById('adminMessage');if(email==='adminaura@gmail.com'&&pw==='1234asdf'){sessionStorage.setItem('aura_admin_auth','yes');msg.textContent='Admin login successful. Opening dashboard…';setTimeout(()=>location.href='office.html',350)}else{msg.textContent='Invalid administrator email or password.'}}
+document.getElementById('password').addEventListener('keydown',e=>{if(e.key==='Enter')loginGuest()});document.getElementById('adminPassword').addEventListener('keydown',e=>{if(e.key==='Enter')loginAdmin()});
+</script></body></html>
